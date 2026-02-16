@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart City Transport Portal</title>
+    <link rel="stylesheet" href="exp3.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="showDateTime(); checkAvailability();">
+
+    <div class="main-box">
+
+        <h1>Smart City Transport Portal</h1>
+
+        <!-- Task 1 -->
+        <h2>Task 1: Welcome Message</h2>
+        <button onclick="showWelcome()">Show Welcome Message</button>
+
+        <!-- Task 2 -->
+        <h2>Task 2: Current Date & Time</h2>
+        <p id="datetime"></p>
+
+        <!-- Task 3 -->
+        <h2>Task 3: Bus Routes</h2>
+        <button onclick="showRoutes()">Show Bus Routes</button>
+        <div id="routes"></div>
+
+        <!-- Task 4 -->
+        <h2>Task 4: Ticket Fare Calculator</h2>
+        <input type="number" id="stops" placeholder="Enter number of stops">
+        <button onclick="calculateFare()">Calculate Fare</button>
+        <p id="fareResult"></p>
+
+        <!-- Task 5 -->
+        <h2>Task 5: Bus Service Availability</h2>
+        <p id="availability"></p>
+
+        <!-- Task 6 -->
+        <h2>Task 6: Bus Stop List</h2>
+        <ul id="stopList"></ul>
+
+        <!-- Task 7 -->
+        <h2>Task 7: Search Bus Stop</h2>
+        <input type="text" id="searchStop" placeholder="Enter stop name">
+        <button onclick="searchStop()">Search</button>
+        <p id="searchResult"></p>
+
+        <!-- Task 8 -->
+        <h2>Task 8: Route Details</h2>
+        <input type="text" id="routeNumber" placeholder="Enter route number">
+        <button onclick="showRoute()">Show Route</button>
+        <p id="routeResult"></p>
+
+        <!-- Task 9 -->
+        <h2>Task 9: Delay Notification</h2>
+        <button onclick="showDelay()">Check Delay</button>
+        <p id="delayMessage"></p>
+
+        <!-- Task 10 -->
+        <h2>Task 10: Bus Schedule</h2>
+        <table id="scheduleTable">
+            <tr>
+                <th>Route</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
